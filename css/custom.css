@@ -36,10 +36,30 @@
 }
 .single-checkout-box input[type="file"] {
   line-height: 30px;
+  width: 100%;
 }
 .hd__title {
   color: #444444;
   font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
+}
+@media (max-width: 767px){
+  .slider__content h1{
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .slider__content h2{
+    font-size: 24px;
+  }
+  .bradcaump__inner{
+    padding-top: 100px;
+  }
+  .ht__bradcaump__wrap{
+    height: 250px;
+  }
+  .contact__details p{
+    font-size: 14px;
+  }
 }
