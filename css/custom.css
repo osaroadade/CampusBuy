@@ -24,7 +24,6 @@
 }
 .single-checkout-box input[type="file"] {
   line-height: 30px;
-  width: 100%;
 }
 .hd__title {
   color: #444444;
@@ -33,6 +32,9 @@
   text-transform: capitalize;
 }
 @media (max-width: 767px){
+  .single-checkout-box input[type="file"] {
+    width: 100%;
+  }
   .slider__content h1{
     padding-top: 50px;
     font-size: 30px;
@@ -59,4 +61,10 @@
   section.ptb--210{
     padding: 0 0 80px 0;
   }
+}
+.product__details h2{
+  font-size: 20px;
+}
+.product__price li{
+  font-size: 14px;
 }
