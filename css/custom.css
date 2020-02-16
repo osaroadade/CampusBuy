@@ -50,4 +50,13 @@
   .contact__details p{
     font-size: 14px;
   }
+  .product__list .col-sm-6{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  section.ptb--210{
+    padding: 0 0 80px 0;
+  }
 }
