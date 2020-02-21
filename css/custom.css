@@ -68,3 +68,15 @@
 .product__price li{
   font-size: 14px;
 }
+.single__tabs__panel .login select.business__location{
+  -webkit-appearance: none;
+  background: rgba(0, 0, 0, 0) url(../images/icons/select-option.png) no-repeat scroll 96% 14px / 11px 9px;
+  line-height: 40px;
+  margin: 40px 0 30px;
+  border-color: currentcolor currentcolor #8e8e8e;
+  border-image: none;
+  border-style: none none solid;
+  cursor: pointer;
+  color: #686868;
+  padding-left: 15px;
+}

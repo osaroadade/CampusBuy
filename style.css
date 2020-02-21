@@ -2128,7 +2128,6 @@ select.select-color {
     border-style: none none solid;
     border-width: 0 0 1px;
     color: #666666;
-    font-size: 12px;
     padding-bottom: 15px;
 }
 .single-contact-form {
@@ -2151,6 +2150,7 @@ select.select-color {
     margin-right: -15px;
 }
 .contact-box.message textarea {
+    color: #666666;
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
