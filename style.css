@@ -987,7 +987,7 @@ h3.widget-title-modal {
     color: #666666;
     font-size: 15px;
     line-height: 26px;
-    margin: 27px auto auto;
+    /* margin: 27px auto auto; */
     width: 40%;
 }
 .popular__product__wrap .product {

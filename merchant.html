@@ -4,10 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CampusBuy :: Login or Register</title>
-    <meta name="description" content="CampusBuy is a platform made for students by students. It seeks to improve business amongst students with a very simplistic approach; Connecting BUYERS to SELLERS.">
-    <meta name="keywords" content="Ecommerce, University of Benin, UniBen, uniben, schools, school, university, shop, catering services, services, gadgets, Phones, Laptops, Smartwatches, hostel, Accommodation, Student Hostels, Self Con., Flats, Events & Shows, Church Programs, Shows, Similar shows and events Events, Clothing & Accessories, Clothes, Shoes, Bags, Services, Catering Services, Photography Shoots, Data Vendor, buy, sell, buy and sell, become a merchant, how to sell in university, make money online, Others, Books, School Materials, Generic Items">
+    <title>CampusBuy :: Merchant Account</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory 
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
 
     <!-- Bootstrap Fremwork Main Css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,7 +35,7 @@
     <![endif]-->
 
     <!-- Body main wrapper start -->
-    <div class="wrapper  home-v5">
+    <div class="wrapper home-v5">
         <!-- Start Header Style -->
         <header id="header" class="htc-header header--5">
             <!-- Start Mainmenu Area -->
@@ -63,8 +66,8 @@
                         <!-- End MAinmenu Ares -->
                         <div class="col-lg-3 col-md-4 col-6">
                             <ul class="menu-extra">
-                                <li class="search search__open d-none d-sm-block"><span class="ti-search"></span></li>
-                                <li class="active"><a href="login-register.html"><span class="ti-user"></span></a></li>
+                                <li title="Search" class="search search__open d-none d-sm-block"><span class="ti-search"></span></li>
+                                <li><a title="Account" href="merchant.html"><span class="ti-user"></span></a></li>
                                 <li class="toggle__menu"><span class="ti-menu"></span></li>
                             </ul>
                         </div>
@@ -117,84 +120,38 @@
                             <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="post-ad.html">Post Ad</a></li>
                             <li><a href="view-ad.html">View Ads</a></li>
+                            <li><a href="index.html">Logout</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <!-- End Offset MEnu -->
             <!-- End Offset Wrapper -->
-            <!-- Start Login Register Area -->
-            <div class="htc__login__register bg__white ptb--200"
-                style="background: rgba(0, 0, 0, 0) url(images/bg/5.jpg) no-repeat scroll center center / cover ;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 ml-auto mr-auto">
-                            <ul class="login__register__menu nav justify-contend-center" role="tablist">
-                                <li role="presentation" class="login active"><a class="active" href="#login" role="tab"
-                                        data-toggle="tab">Login</a></li>
-                                <li role="presentation" class="register"><a href="#register" role="tab"
-                                        data-toggle="tab">Register</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Start Login Register Content -->
-                    <div class="row tab-content">
-                        <div class="col-md-6  ml-auto mr-auto">
-                            <div class="htc__login__register__wrap">
-                                <!-- Start Single Content -->
-                                <div id="login" role="tabpanel" class="single__tabs__panel tab-pane active">
-                                <p class="text-center">Login to access your merchant account</p>
-                                    <form class="login" method="post">
-                                        <input type="email" placeholder="Email">
-                                        <input type="password" placeholder="Password">
-                                    </form>
-                                    <div class="tabs__checkbox">
-                                        <input type="checkbox">
-                                        <span> Remember me</span>
-                                        <span class="forget"><a href="#">Forget Pasword?</a></span>
-                                    </div>
-                                    <div class="htc__login__btn mt--30">
-                                        <a href="merchant.html">Login</a>
-                                    </div>
+
+            <!-- Start Bradcaump area -->
+            <div class="ht__bradcaump__area"
+                style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
+                <div class="ht__bradcaump__wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bradcaump__inner text-center">
+                                    <h2 class="bradcaump-title">Welcome Merchants First Name</h2>
+                                    <nav class="bradcaump-inner">
+                                        <a class="breadcrumb-item" href="index.html">Home</a>
+                                        <span class="brd-separetor">/</span>
+                                        <span class="breadcrumb-item active">Merchant Account</span>
+                                    </nav>
                                 </div>
-                                <!-- End Single Content -->
-                                <!-- Start Single Content -->
-                                <div id="register" role="tabpanel" class="single__tabs__panel tab-pane">
-                                <p class="text-center">You need to create an account to start selling on CampusBuy</p>
-                                    <form class="login" method="post">
-                                        <input type="text" placeholder="First Name">
-                                        <input type="text" placeholder="Last Name">
-                                        <input type="text" placeholder="Business Name">
-                                        <textarea cols="30" rows="3" placeholder="Business Description"></textarea>
-                                        <input type="text" placeholder="Location">
-                                        <input type="email" placeholder="Email">
-                                        <input type="password" placeholder="Password">
-                                        <select class="business__location">
-                                            <option>Select Category</option>
-                                            <option>Gadgets</option>
-                                            <option>Accomodation</option>
-                                            <option>Events</option>
-                                            <option>Clothing & Accessories</option>
-                                            <option>Services</option>
-                                            <option>Random</option>
-                                        </select>
-                                    </form>
-                                    <div class="tabs__checkbox">
-                                        <input type="checkbox">
-                                        <span> Remember me</span>
-                                    </div>
-                                    <div class="htc__login__btn">
-                                        <a href="merchant.html">register</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Content -->
                             </div>
                         </div>
                     </div>
-                    <!-- End Login Register Content -->
                 </div>
             </div>
-            <!-- End Login Register Area -->
+            <!-- End Bradcaump area -->
+
+
+
             <!-- Start Footer Area -->
             <footer class="htc__foooter__area bg__cat--3">
                 <div class="container">
@@ -256,18 +213,18 @@
             <!-- End Footer Area -->
         </div>
     </div>
-        <!-- Body main wrapper end -->
-        <!-- Placed js at the end of the document so the pages load faster -->
+    <!-- Body main wrapper end -->
+    <!-- Placed js at the end of the document so the pages load faster -->
 
-        <!-- jquery latest version -->
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        <!-- Bootstrap Framework js -->
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- All js plugins included in this file. -->
-        <script src="js/plugins.js"></script>
-        <!-- Main js file that contents all jQuery plugins activation. -->
-        <script src="js/main.js"></script>
+    <!-- jquery latest version -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap Framework js -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="js/plugins.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="js/main.js"></script>
 
 </body>
 
