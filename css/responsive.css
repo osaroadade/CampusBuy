@@ -1111,7 +1111,7 @@ blockquote::before {
   display: block;
 }
 .search__area {
-  display: none;
+  /* display: none; */
 }
 .shopping__cart.shopping__cart__on {
   padding-bottom: 10px;
