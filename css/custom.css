@@ -71,10 +71,10 @@ html{
     padding: 0 0 80px 0;
   }
   .search--status img{
-    width: 50%;
+    width: 100%!important;
   }
   .search--bar{
-    width: 100%;
+    width: 100%!important;
   }
 }
 .product__details h2{
