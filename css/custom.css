@@ -70,6 +70,12 @@ html{
   section.ptb--210{
     padding: 0 0 80px 0;
   }
+  .search--status img{
+    width: 50%;
+  }
+  .search--bar{
+    width: 100%;
+  }
 }
 .product__details h2{
   font-size: 20px;
