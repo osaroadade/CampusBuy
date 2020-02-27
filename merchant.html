@@ -66,7 +66,7 @@
                         <!-- End MAinmenu Ares -->
                         <div class="col-lg-3 col-md-4 col-6">
                             <ul class="menu-extra">
-                                <li><a title="Account" href="merchant.html"><span class="ti-user"></span></a></li>
+                                <li><a title="Signed in As First Name" href="merchant.html"><span class="ti-user"></span></a></li>
                                 <li class="toggle__menu"><span class="ti-menu"></span></li>
                             </ul>
                         </div>
@@ -117,7 +117,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="bradcaump__inner text-center">
-                                    <h2 class="bradcaump-title">Welcome Merchants First Name</h2>
+                                    <h2 class="bradcaump-title">Merchant Account</h2>
                                     <nav class="bradcaump-inner">
                                         <a class="breadcrumb-item" href="index.html">Home</a>
                                         <span class="brd-separetor">/</span>
@@ -131,7 +131,288 @@
             </div>
             <!-- End Bradcaump area -->
 
-
+            <!--Merchant Account Area Start-->
+            <section class="merchant--details ptb--90">
+                <div class="container">
+                    <div class="row">
+                        <!--Welcome Message Start-->
+                        <div class="col-12 welcome--message">
+                            <p><span class="ti-user"></span> Welcome, First Name</p>
+                        </div>
+                        <!--Welcome Message End-->
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-details-list" data-toggle="list" href="#list-details" role="tab" aria-controls="Merchant Details">Merchant Details</a>
+                                <a class="list-group-item list-group-item-action" id="list-business-list" data-toggle="list" href="#list-business" role="tab" aria-controls="Business Details">Business Details</a>
+                                <a class="list-group-item list-group-item-action" id="list-account-list" data-toggle="list" href="#list-account" role="tab" aria-controls="Account Details">Account Details</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-9 col-lg-9">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active infomation" id="list-details" role="tabpanel" aria-labelledby="list-details-list">
+                                    <h1>My Details</h1>
+                                    <div class="merchant__information personal--information">
+                                        <h2 class="merchant--details__head">Personal Information</h2>
+                                        <div class="row merchant--details--profile">
+                                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                                <p>Update your personal details.</p>
+                                                <div class="update__message">
+                                                    <div class="hide alert alert-success alert-dismissible fade show" role="alert" id="change--effected__account">
+                                                        <p>Your changes have been saved!</p>
+                                                    </div>
+                                                    <!--Error message
+                                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                                        <p>Something went wrong. <strong>Please try again.</strong></p>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 col-lg-8">
+                                                <form class="row login login--account" method="post">
+                                                    <div class="col-sm-12 col-md-6 col-lg-6 form--group">
+                                                        <label for="first-name" class="form--label">First Name</label>
+                                                        <input class="form--input" id="first-name" type="text" autocomplete="cc-given-name" aria-required="false">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-6 form--group">
+                                                        <label for="last-name" class="form--label">Last Name</label>
+                                                        <input class="form--input" type="text" id="last-name" autocomplete="cc-family-name" aria-required="false">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-6 form--group">
+                                                        <label for="tel" class="form--label">Phone Number</label>
+                                                        <input class="form--input" id="tel" type="tel" autocomplete="tel" aria-required="false">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-6 form--group">
+                                                        <label for="whatsapp-tel" class="form--label">WhatsApp Number</label>
+                                                        <input class="form--input" id="whatsapp-tel" type="tel" autocomplete="tel" aria-required="false">
+                                                    </div>
+                                                </form>
+                                                <div class="update--merchant__details-btn">
+                                                    <a href="javascript:void(0)" class="commit--changes__personal" data-toggle="change--effected" toggle="#change--effected__account">Update</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="merchant__information business--information">
+                                        <h2 class="merchant--details__head">Business Information</h2>
+                                        <div class="row merchant--details--profile">
+                                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                                <p>Update your business details.</p>
+                                                <div class="update__message">
+                                                    <div class="hide alert alert-success alert-dismissible fade show" role="alert" id="change--effected__business">
+                                                        <p>Your changes have been saved!</p>
+                                                    </div>
+                                                    <!--Error message
+                                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                                        <p>Something went wrong. <strong>Please try again.</strong></p>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 col-lg-8">
+                                                <form class="login login--account w--50" method="post">
+                                                    <div class="form--group">
+                                                        <label for="business-name" class="form--label">Business Name</label>
+                                                        <input class="form--input" id="business-name" type="text" autocomplete="organization" aria-required="false">
+                                                    </div>
+                                                    <div class="form--group">
+                                                        <label for="business-desc" class="form--label">Business Description</label>
+                                                        <textarea class="form--input" id="business-desc" cols="30" rows="3" maxlength="3000" aria-required="false"></textarea>
+                                                    </div>
+                                                </form>
+                                                <div class="update--merchant__details-btn">
+                                                    <a href="javascript:void(0)" class="commit--changes__business" data-toggle="change--effected" toggle="#change--effected__business">Update</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade infomation" id="list-business" role="tabpanel" aria-labelledby="list-business-list">
+                                    <h1>Business Details</h1>
+                                    <div class="merchant__information">
+                                        <h2 class="merchant--details__head">Your Ads</h2>
+                                        <p>Select any ad to see how it's doing.</p>
+                                        <div class="row ads--you__sell">
+                                            <!-- Start Single Product -->
+                                            <div class="col-md-4 single__pro col-lg-3 col-sm-12">
+                                                <div class="product foo">
+                                                    <div class="product__inner">
+                                                        <div class="pro__thumb">
+                                                            <a href="view-stat.html">
+                                                                <img src="images/product/1.png" alt="product images">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product__details">
+                                                        <h2><a href="view-stat.html">Tecno Spark 3 Pro</a></h2>
+                                                        <ul class="product__price">
+                                                            <li class="new__price">&#x20A6;45,000</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Product -->
+                                            <!-- Start Single Product -->
+                                            <div class="col-md-4 single__pro col-lg-3 col-sm-12">
+                                                <div class="product foo">
+                                                    <div class="product__inner">
+                                                        <div class="pro__thumb">
+                                                            <a href="view-stat.html">
+                                                                <img src="images/product/1.png" alt="product images">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product__details">
+                                                        <h2><a href="view-stat.html">Tecno Spark 3 Pro</a></h2>
+                                                        <ul class="product__price">
+                                                            <li class="new__price">&#x20A6;45,000</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Product -->
+                                            <!-- Start Single Product -->
+                                            <div class="col-md-4 single__pro col-lg-3 col-sm-12">
+                                                <div class="product foo">
+                                                    <div class="product__inner">
+                                                        <div class="pro__thumb">
+                                                            <a href="view-stat.html">
+                                                                <img src="images/product/1.png" alt="product images">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product__details">
+                                                        <h2><a href="view-stat.html">Tecno Spark 3 Pro</a></h2>
+                                                        <ul class="product__price">
+                                                            <li class="new__price">&#x20A6;45,000</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Product -->
+                                            <!-- Start Single Product -->
+                                            <div class="col-md-4 single__pro col-lg-3 col-sm-12">
+                                                <div class="product foo">
+                                                    <div class="product__inner">
+                                                        <div class="pro__thumb">
+                                                            <a href="view-stat.html">
+                                                                <img src="images/product/1.png" alt="product images">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product__details">
+                                                        <h2><a href="view-stat.html">Tecno Spark 3 Pro</a></h2>
+                                                        <ul class="product__price">
+                                                            <li class="new__price">&#x20A6;45,000</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Product -->
+                                            <!-- Start Single Product -->
+                                            <div class="col-md-4 single__pro col-lg-3 col-sm-12">
+                                                <div class="product foo">
+                                                    <div class="product__inner">
+                                                        <div class="pro__thumb">
+                                                            <a href="#">
+                                                                <img src="images/product/1.png" alt="product images">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product__details">
+                                                        <h2><a href="product-details.html">Tecno Spark 3 Pro</a></h2>
+                                                        <ul class="product__price">
+                                                            <li class="new__price">&#x20A6;45,000</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Product -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade infomation" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
+                                    <h1>Business Details</h1>
+                                    <div class="merchant__information login--details">
+                                        <h2 class="merchant--details__head">Login Details</h2>
+                                        <div class="row merchant--details--profile">
+                                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                                <p>Update your login details.</p>
+                                                <div class="update__message">
+                                                    <div class="hide alert alert-success alert-dismissible fade show" role="alert" id="change--effected__login">
+                                                        <p>Your changes have been saved!</p>
+                                                    </div>
+                                                    <!--Error message
+                                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                                        <p>Something went wrong. <strong>Please try again.</strong></p>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 col-lg-8">
+                                                <form class="login login--account w--50" method="post">
+                                                    <div class="form--group">
+                                                        <label for="reg-email" class="form--label">Email</label>
+                                                        <input class="form--input" id="reg-email" type="email" autocomplete="email" aria-required="false">
+                                                    </div>
+                                                    <div class="form--group">
+                                                        <label for="reg-current-password" class="form--label">Current Password</label>
+                                                        <input class="form--input eye--password" id="reg-current-password" type="password" autocomplete="current-password" aria-required="false">
+                                                        <span toggle="#reg-current-password" data-toggle="current-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
+                                                    </div>
+                                                    <div class="form--group">
+                                                        <label for="reg-new-password" class="form--label">New Password</label>
+                                                        <input class="form--input eye--password" id="reg-new-password" type="password" autocomplete="new-password" aria-required="false">
+                                                        <span toggle="#reg-new-password" data-toggle="new-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
+                                                    </div>
+                                                </form>
+                                                <div class="update--merchant__details-btn">
+                                                    <a href="javascript:void(0)" class="commit--changes__login" data-toggle="change--effected" toggle="#change--effected__login">Update</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="merchant__information login--details">
+                                        <h2 class="merchant--details__head">Delete Account</h2>
+                                        <div class="row merchant--details--profile">
+                                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                                <p>Update your login details.</p>
+                                                <div class="update__message">
+                                                    <div class="hide alert alert-success alert-dismissible fade show" role="alert" id="change--effected__login">
+                                                        <p>Your changes have been saved!</p>
+                                                    </div>
+                                                    <!--Error message
+                                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                                        <p>Something went wrong. <strong>Please try again.</strong></p>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 col-lg-8">
+                                                <form class="login login--account w--50" method="post">
+                                                    <div class="form--group">
+                                                        <label for="reg-email" class="form--label">Email</label>
+                                                        <input class="form--input" id="reg-email" type="email" autocomplete="email" aria-required="false">
+                                                    </div>
+                                                    <div class="form--group">
+                                                        <label for="reg-current-password" class="form--label">Current Password</label>
+                                                        <input class="form--input eye--password" id="reg-current-password" type="password" autocomplete="current-password" aria-required="false">
+                                                        <span toggle="#reg-current-password" data-toggle="current-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
+                                                    </div>
+                                                    <div class="form--group">
+                                                        <label for="reg-new-password" class="form--label">New Password</label>
+                                                        <input class="form--input eye--password" id="reg-new-password" type="password" autocomplete="new-password" aria-required="false">
+                                                        <span toggle="#reg-new-password" data-toggle="new-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
+                                                    </div>
+                                                </form>
+                                                <div class="update--merchant__details-btn">
+                                                    <a href="javascript:void(0)" class="commit--changes__login" data-toggle="change--effected" toggle="#change--effected__login">Update</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Merchant Account Area End-->
 
             <!-- Start Footer Area -->
             <footer class="htc__foooter__area bg__cat--3">

@@ -174,21 +174,21 @@
                                     <div class="contact-title">
                                         <h2 class="contact__title">We Would Love To Hear From You</h2>
                                     </div>
-                                    <form id="contact-form" action="mail.php" method="post">
+                                    <form id="contact-form" action="#" method="post">
                                         <div class="single-contact-form">
                                             <div class="contact-box name">
-                                                <input type="text" name="name" placeholder="Your Name*">
-                                                <input type="email" name="email" placeholder="Mail*">
+                                                <input type="text" name="name" placeholder="Your Name*" aria-required="true" autocomplete="name" required>
+                                                <input type="email" name="email" placeholder="Mail*" aria-required="true" autocomplete="email" required>
                                             </div>
                                         </div>
                                         <div class="single-contact-form">
                                             <div class="contact-box subject">
-                                                <input type="text" name="subject" placeholder="Subject*">
+                                                <input type="text" name="subject" placeholder="Subject*" aria-required="true" required>
                                             </div>
                                         </div>
                                         <div class="single-contact-form">
                                             <div class="contact-box message">
-                                                <textarea name="message" placeholder="Message*"></textarea>
+                                                <textarea name="message" placeholder="Message*" aria-required="true" required></textarea>
                                             </div>
                                         </div>
                                         <div class="contact-btn">

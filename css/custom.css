@@ -7,6 +7,10 @@ img{
 html{
   scroll-behavior: smooth;
 }
+label{
+  margin-bottom: 0 !important;
+  cursor: text;
+}
 .choose__container {
   justify-content: center;
   padding-top: 50px;
@@ -76,6 +80,9 @@ html{
   .search--bar{
     width: 100%!important;
   }
+  form.w--50{
+    width: 100%!important;
+  }
 }
 .product__details h2{
   font-size: 20px;
@@ -121,7 +128,7 @@ html{
   border-color: currentcolor currentcolor #8e8e8e;
   font-size: 16px;
   color: #686868;
-  margin: 40px 0px 20px;
+  /* margin: 40px 0px 20px; */
   border-style: none none solid;
   border-width: 0px 0px 1px;
   border-image: none;
@@ -147,4 +154,127 @@ html{
 }
 .search__bar input[type="search"]{
   margin-bottom: 48px;
+}
+.login input + input{
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+.login textarea:last-child{
+  margin-bottom: 10px;
+}
+.login textarea{
+  /* margin-top: 25px; */
+  margin-bottom: 0px;
+  /* padding: 0 15px; */
+  font-size: 14px;
+}
+.form--input{
+  margin-bottom: 10px;
+}
+.error-message-area{
+  padding-bottom: 10px;
+}
+.welcome--message{
+  margin-bottom: 30px;
+}
+.infomation h1{
+  margin-bottom: 30px;
+}
+.merchant__information + .merchant__information{
+  margin-top: 25px;
+}
+.merchant--details__head{
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #efefee;
+  padding-bottom: 8px;
+}
+.merchant--details .merchant--details--profile{
+  margin-top: 20px;
+}
+.merchant--details .merchant--details--profile h3{
+  font-size: 18px;
+}
+.form--group {
+  position: relative;
+}
+.form--label {
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  -webkit-transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+  transition: transform 150ms ease-out, font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+.focused .form--label {
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+  font-size: .75em;
+}
+.form--input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+}
+.eye--password{
+  position: relative;
+}
+.field--icon{
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.list-group-item.active{
+  background-color: #1a22b8;
+  border-color: #1a22b8;
+}
+.update--merchant__details-btn{
+  margin-top: 15px;
+}
+.update--merchant__details-btn a{
+  display: inline-block;
+  font-size: 15px;
+  height: 40px;
+  width: 100px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  background-color: #1a22b8;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+}
+.update--merchant__details-btn a:hover{
+  background-color: transparent;
+  border: 1px solid #d5d5d5;
+  color: #4b4b4b;
+}
+form.w--50{
+  width: 50%;
+}
+.update__message{
+  margin-top: 10px;
+}
+.update__message .hide{
+  display: none;
+}
+.update__message .view{
+  display: block;
+}
+.ads--you__sell .product{
+  margin-top: 40px;
+}
+.merchant__information > p{
+  padding-top: 10px;
+}
+.delete a:hover{
+  background-color: #721c24!important;
+  border: 1px solid #721c24!important;
+}
+.pro__detl__title p span{
+  font-size: 16px;
 }

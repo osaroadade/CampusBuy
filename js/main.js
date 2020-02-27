@@ -465,6 +465,44 @@ $('.image-popup').magnificPopup({
 
 })(jQuery);
 
+// Placeholder and Label Animation
+$('input, textarea').focus(function(){
+  $(this).parents('.form--group').addClass('focused');
+});
 
 
+$('input, textarea').blur(function(){
+  var inputValue = $(this).val();
+  if ( inputValue == "" ) {
+    $(this).removeClass('filled');
+    $(this).parents('.form--group').removeClass('focused');  
+  } else {
+    $(this).addClass('filled');
+  }
+})
 
+//Show Hidden Password
+$(".toggle--password").click(function() {
+
+  $(this).toggleClass("zmdi-eye zmdi-eye-off");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+//Show update status for merchant page
+$(".commit--changes__personal").click(function() {
+
+  $("#change--effected__account").toggleClass("hide view");
+});
+$(".commit--changes__business").click(function() {
+
+  $("#change--effected__business").toggleClass("hide view");
+});
+$(".commit--changes__login").click(function() {
+
+  $("#change--effected__login").toggleClass("hide view");
+});

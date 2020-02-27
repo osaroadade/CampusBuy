@@ -254,7 +254,7 @@ button {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 0 auto 51px;
+    margin: 0 auto 25px;
     max-width: 370px;
 }
 .login__register__menu li a {
@@ -287,10 +287,10 @@ button {
     border-style: none none solid;
     border-width: 0 0 1px;
     color: #686868;
-    font-size: 16px;
+    font-size: 1;
     height: 40px;
-    line-height: 40px;
-    padding: 0 15px;
+    /* line-height: 40px; */
+    /* padding: 0 15px; */
     width: 100%;
     background: transparent;
 }
@@ -339,7 +339,7 @@ button {
     text-align: center;
 }
 .login input:last-child {
-    margin-top: 14px;
+    /* margin-top: 14px; */
 }
 .htc__social__connect h2 {
     color: #000;

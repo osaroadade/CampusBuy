@@ -125,14 +125,24 @@
                                 <!-- Start Single Content -->
                                 <div id="login" role="tabpanel" class="single__tabs__panel tab-pane active">
                                 <p class="text-center">Login to access your merchant account.</p>
-                                    <form class="login" method="post">
-                                        <input type="email" placeholder="Email">
-                                        <input type="password" placeholder="Password">
+                                    <form class="login login--account" method="post">
+                                        <div class="form--group">
+                                            <label class="form--label" for="login-email">Email</label>
+                                            <input class="form--input" id="login-email" type="email"autocomplete="email" aria-placeholder="Enter your email" aria-required="true" required>
+                                        </div>
+                                        <div class="form--group">
+                                            <label class="form--label" for="login-password">Password</label>
+                                            <input class="form--input eye--password" id="login-password" type="password" autocomplete="current-password" aria-placeholder="Enter your password" aria-required="true" required>
+                                            <span toggle="#login-password" data-toggle="login-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
+                                        </div>
                                     </form>
+                                    <div class="error-message-area">
+                                        <p class="error-messege"></p>
+                                    </div>
                                     <div class="tabs__checkbox">
-                                        <input type="checkbox">
+                                        <input type="checkbox" aria-selected="false">
                                         <span> Remember me</span>
-                                        <span class="forget"><a href="#">Forget Pasword?</a></span>
+                                        <span class="forget"><a href="#">Forgot Pasword?</a></span>
                                     </div>
                                     <div class="htc__login__btn mt--30">
                                         <a href="merchant.html">Login</a>
@@ -142,27 +152,48 @@
                                 <!-- Start Single Content -->
                                 <div id="register" role="tabpanel" class="single__tabs__panel tab-pane">
                                 <p class="text-center">You need to create an account to start selling on CampusBuy.</p>
-                                    <form class="login" method="post">
-                                        <input type="text" placeholder="First Name">
-                                        <input type="text" placeholder="Last Name">
-                                        <input type="text" placeholder="Business Name">
-                                        <textarea cols="30" rows="3" placeholder="Business Description"></textarea>
-                                        <input type="text" placeholder="Location">
-                                        <input type="email" placeholder="Email">
-                                        <input type="password" placeholder="Password">
-                                        <select class="business__location">
-                                            <option>Select Category</option>
-                                            <option>Gadgets</option>
-                                            <option>Accomodation</option>
-                                            <option>Events</option>
-                                            <option>Clothing & Accessories</option>
-                                            <option>Services</option>
-                                            <option>Random</option>
-                                        </select>
+                                    <form class="login login--account" method="post">
+                                        <div class="form--group">
+                                            <label for="first-name" class="form--label">First Name</label>
+                                            <input class="form--input" id="first-name" type="text" autocomplete="cc-given-name" aria-required="true" required>
+                                        </div>
+                                        <div class="form--group">
+                                            <label for="last-name" class="form--label">Last Name</label>
+                                            <input class="form--input" type="text" id="last-name" autocomplete="cc-family-name" aria-required="true" required>
+                                        </div>
+                                        <div class="form--group">
+                                            <label for="tel" class="form--label">Phone Number</label>
+                                            <input class="form--input" id="tel" type="tel" autocomplete="tel" aria-required="true" required>
+                                        </div>
+                                        <div class="form--group">
+                                            <label for="whatsapp-tel" class="form--label">WhatsApp Number</label>
+                                            <input class="form--input" id="whatsapp-tel" type="tel" autocomplete="tel" aria-required="true" required>
+                                        </div>
+                                        <div class="form--group">
+                                            <label for="location" class="form--label">Location</label>
+                                            <input class="form--input" id="location" type="text" autocomplete="address-level1" aria-required="true" required>
+                                        </div>
+                                        <div class="form--group">
+                                            <label for="reg-email" class="form--label">Email</label>
+                                            <input class="form--input" id="reg-email" type="email" autocomplete="email" aria-required="true" required>
+                                        </div>
+                                        <div class="form--group">
+                                            <label for="reg-password" class="form--label">Password</label>
+                                            <input class="form--input eye--password" id="reg-password" type="password" autocomplete="new-password" aria-required="true" required>
+                                            <span toggle="#reg-password" data-toggle="login-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
+                                        </div>
+                                        <div class="form--group">
+                                            <label for="business-name" class="form--label">Business Name</label>
+                                            <input class="form--input" id="business-name" type="text" autocomplete="organization" aria-required="true" required>
+                                        </div>
+                                        <div class="form--group">
+                                            <label for="business-desc" class="form--label">Business Description</label>
+                                            <textarea class="form--input" id="business-desc" cols="30" rows="3" maxlength="3000" aria-required="true" required></textarea>
+                                        </div>
                                     </form>
                                     <div class="tabs__checkbox">
-                                        <input type="checkbox">
-                                        <span> Remember me</span>
+                                        <input type="checkbox" aria-selected="false">
+                                        <span> Remember me </span>
                                     </div>
                                     <div class="htc__login__btn">
                                         <a href="merchant.html">register</a>
