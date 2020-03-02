@@ -476,3 +476,13 @@ $(".commit--changes__delete").click(function () {
 
   $("#change--effected__delete").toggleClass("hide view");
 });
+
+
+//Toast Notification on Load
+$(document).ready(function() {
+  $("#openToast").toggleClass("hide view");
+  
+  $('a.exit--toast').click(function() {
+      $("#openToast").fadeOut(1000, 0);
+  });
+});
