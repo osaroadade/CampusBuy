@@ -83,6 +83,18 @@ label{
   form.w--50{
     width: 100%!important;
   }
+  .mb__30{
+    margin-bottom: 30px;
+  }
+  .pro__dtl__btn li.buy__now__btn a{
+    width: 145px;
+  }
+  .notification--reminder h3{
+    font-size: 14px;
+  }
+  .notification--reminder{
+    padding: 30px;
+  }
 }
 .product__details h2{
   font-size: 20px;
@@ -108,9 +120,6 @@ label{
 }
 .pro__detl__title p{
   padding-top: 8px;
-}
-.filter__menu__container{
-  justify-content: center;
 }
 .single__tabs__panel p{
   padding-bottom: 20px;
@@ -163,9 +172,7 @@ label{
   margin-bottom: 10px;
 }
 .login textarea{
-  /* margin-top: 25px; */
   margin-bottom: 0px;
-  /* padding: 0 15px; */
   font-size: 14px;
 }
 .form--input{
@@ -228,6 +235,7 @@ label{
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  cursor: pointer;
 }
 .list-group-item.active{
   background-color: #1a22b8;
@@ -271,10 +279,86 @@ form.w--50{
 .merchant__information > p{
   padding-top: 10px;
 }
+.delete{
+  margin-left: 30px;
+}
 .delete a:hover{
   background-color: #721c24!important;
   border: 1px solid #721c24!important;
 }
 .pro__detl__title p span{
   font-size: 16px;
+}
+.delete__account a{
+  background-color: #721c24!important;
+}
+.delete__account a:hover{
+  background-color: transparent!important;
+}
+.form--group input[type="file"]{
+  align-items: center;
+}
+.product--select{
+  overflow: hidden;
+}
+.product--select select{
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: currentcolor currentcolor #8e8e8e;
+  -o-border-image: none;
+  border-image: none;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  color: #686868;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  background: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  background: rgba(0, 0, 0, 0) url(../images/icons/select-option.png) no-repeat scroll 100% 14px / 11px 9px;
+  font: inherit;
+}
+.htc__product__container > h3{
+  font-size: 18px;
+  font-weight: 520;
+  text-align: center;
+}
+.product--select__cat{
+  margin-bottom: 10px;
+}
+.form--input__file{
+  padding-top: 0px;
+}
+.notification--reminder{
+  position: absolute;
+  bottom: 0;
+  z-index: 9999999999999;
+  background: url(../images/bg/2.jpg);
+  display: none;
+}
+.notification--reminder h3{
+  font-weight: 500;
+}
+.notification--reminder h3 a{
+  margin-left: 15px;
+  background: #1a22b8;
+  border: 1px solid #1a22b8;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  padding: 0 40px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.notification--reminder h3 a:hover{
+  border: 1px solid #aaaaaa;
+  color: #8b8b8b;
+  background: transparent;
 }

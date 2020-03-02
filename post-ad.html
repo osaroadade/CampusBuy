@@ -84,7 +84,7 @@
             <div class="offsetmenu home-five">
                 <div class="offsetmenu__inner sidebar__menu--inner">
                     <div class="offsetmenu__close__btn">
-                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                        <a href="javascript:void(0)"><i class="zmdi zmdi-close"></i></a>
                     </div>
                     <div class="off__contact">
                         <div class="logo hd__title" style="font-family: Dosis;">
@@ -99,85 +99,77 @@
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                             <li class="active"><a href="post-ad.html">Post Ad</a></li>
-                            <li><a href="view-ad.html">View Ads</a></li>
                             <li><a href="search.html">Search</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <!-- End Offset MEnu -->
-            <!-- Modal -->
-            <div class="modal fade bd-example-modal-sm" id="chooseLocation" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="single-checkout-box select-option mt--20">
-                                <select>
-                                    <option>Select Your Location</option>
-                                    <option>UNIBEN</option>
-                                    <option>UNILAG</option>
-                                    <option>UNICAL</option>
-                                    <option>UNIPORT</option>
-                                    <option>UNIABUJA</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="uniq__btn">
-                                <a href="" class="htc__btn" data-dismiss="modal">close</a>
-                            </div>
-                            <div class="uniq__btn">
-                                <a href="" class="htc__btn">confirm</a>
+            <!-- End Offset Wrapper -->
+            <!-- Start Login Register Area -->
+
+            <!-- Start Bradcaump area -->
+            <div class="ht__bradcaump__area"
+                style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
+                <div class="ht__bradcaump__wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bradcaump__inner text-center">
+                                    <h2 class="bradcaump-title">Post Ad</h2>
+                                    <nav class="bradcaump-inner">
+                                        <a class="breadcrumb-item" href="merchant.html">Merchant Account</a>
+                                        <span class="brd-separetor">/</span>
+                                        <span class="breadcrumb-item active">Post Ad</span>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End Modal-->
-            <!-- End Offset Wrapper -->
-            <!-- Start Login Register Area -->
-            <div class="htc__login__register bg__white ptb--200"
-                style="background: rgba(0, 0, 0, 0) url(images/bg/5.jpg) no-repeat scroll center center / cover ;">
+            <!-- End Bradcaump area -->
+            <section class="ptb--90">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto">
-                            <ul class="login__register__menu nav justify-contend-center" role="tablist">
-                                <li role="presentation" class="login active"><a class="active" role="tab">Post Ads</a>
-                                </li>
-                                <p class="pt-10">Fill in the form below to post an advert.</p>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="checkout-form-inner">
-                        <div class="single-checkout-box">
-                            <input type="text" placeholder="Product Name">
-                            <input type="text" placeholder="Price (Subject to negotiation with buyer)">
-                        </div>
-                        <div class="single-checkout-box">
-                            <textarea name="message" placeholder="Enter Product Description"></textarea>
-                        </div>
-                        <div class="single-checkout-box select-option mt--40">
-                            <input type="file">
-                            <select>
-                                <option>Select Category</option>
-                                <option>Gadgets</option>
-                                <option>Accomodation</option>
-                                <option>Events</option>
-                                <option>Clothing & Accessories</option>
-                                <option>Services</option>
-                                <option>Random</option>
-                            </select>
-                        </div>
-                        <div class="single-checkout-box">
-                        </div>
-                        <div class="htc__login__btn">
-                            <a href="#">submit</a>
+                            <form class="login login--account" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-lg-6 form--group">
+                                        <label for="product-name" class="form--label">Product Name</label>
+                                        <input class="form--input" id="product-name" type="text" aria-required="true" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-lg-6 form--group">
+                                        <label for="price" class="form--label">Price <small><em>(Subject to negotiation with buyer.)</em></small></label>
+                                        <input class="form--input" type="text" id="price" aria-required="true" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-lg-6 form--group">
+                                        <input class="form--input form--input__file" type="file" aria-required="true" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-lg-6 form--group product--select">
+                                        <select class="product--select__cat">
+                                            <option value="0">Select Product Category</option>
+                                            <option value="1">Gadgets</option>
+                                            <option value="2">Accommodation</option>
+                                            <option value="3">Events & Shows</option>
+                                            <option value="4">Clothing & Accessories</option>
+                                            <option value="5">Services</option>
+                                            <option value="6">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 form--group">
+                                        <label for="product-desc" class="form--label">Product Description</label>
+                                        <textarea class="form--input" id="product-desc" cols="30" rows="3" maxlength="3000" aria-required="true" required></textarea>
+                                    </div>  
+                                </div>
+                            </form>
+                            <div class="htc__login__btn">
+                                <a href="merchant.html">submit</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Login Register Area -->
+            </section>
             <!-- Start Footer Area -->
             <footer class="htc__foooter__area bg__cat--3">
                 <div class="container">
@@ -210,7 +202,7 @@
                             <div class="ft__widget">
                                 <h2 class="ft__title">Quick Links</h2>
                                 <ul class="">
-                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="javascript:void(0)">Account</a></li>
                                 </ul>
                             </div>

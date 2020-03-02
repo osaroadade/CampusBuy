@@ -84,7 +84,7 @@
             <div class="offsetmenu home-five">
                 <div class="offsetmenu__inner sidebar__menu--inner">
                     <div class="offsetmenu__close__btn">
-                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                        <a href="javascript:void(0)"><i class="zmdi zmdi-close"></i></a>
                     </div>
                     <div class="off__contact">
                         <div class="logo hd__title" style="font-family: Dosis;">
@@ -99,7 +99,6 @@
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="post-ad.html">Post Ad</a></li>
-                            <li><a href="view-ad.html">View Ads</a></li>
                             <li><a href="search.html">Search</a></li>
                             <li><a href="index.html">Logout</a></li>
                         </ul>
@@ -140,11 +139,12 @@
                             <p><span class="ti-user"></span> Welcome, First Name</p>
                         </div>
                         <!--Welcome Message End-->
-                        <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="mb__30 col-sm-12 col-md-3 col-lg-3">
                             <div class="list-group" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action active" id="list-details-list" data-toggle="list" href="#list-details" role="tab" aria-controls="Merchant Details">Merchant Details</a>
                                 <a class="list-group-item list-group-item-action" id="list-business-list" data-toggle="list" href="#list-business" role="tab" aria-controls="Business Details">Business Details</a>
                                 <a class="list-group-item list-group-item-action" id="list-account-list" data-toggle="list" href="#list-account" role="tab" aria-controls="Account Details">Account Details</a>
+                                <a class="list-group-item list-group-item-action" href="index.html" role="tab" aria-controls="Logout">Logout</a>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-9 col-lg-9">
@@ -326,10 +326,16 @@
                                             </div>
                                             <!-- End Single Product -->
                                         </div>
+                                        <!--No products found
+                                        <div class="text-center search--status">
+                                            <img src="images/bg/not-found.png" alt="No products found" class="search--status__img">
+                                            <p class="search--status__message">You haven't uploaded any product yet. Click <a href="post-ad.html">here</a> to start selling.</p>
+                                        </div>
+                                        <!--End no products founds-->
                                     </div>
                                 </div>
                                 <div class="tab-pane fade infomation" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
-                                    <h1>Business Details</h1>
+                                    <h1>Account Details</h1>
                                     <div class="merchant__information login--details">
                                         <h2 class="merchant--details__head">Login Details</h2>
                                         <div class="row merchant--details--profile">
@@ -372,10 +378,10 @@
                                         <h2 class="merchant--details__head">Delete Account</h2>
                                         <div class="row merchant--details--profile">
                                             <div class="col-sm-12 col-md-4 col-lg-4">
-                                                <p>Update your login details.</p>
+                                                <p>Delete your merchant account.</p>
                                                 <div class="update__message">
-                                                    <div class="hide alert alert-success alert-dismissible fade show" role="alert" id="change--effected__login">
-                                                        <p>Your changes have been saved!</p>
+                                                    <div class="hide alert alert-success alert-dismissible fade show" role="alert" id="change--effected__delete">
+                                                        <p>Your account has been deleted. You'll be redirected in 5 secs.</p>
                                                     </div>
                                                     <!--Error message
                                                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -386,22 +392,14 @@
                                             <div class="col-sm-12 col-md-8 col-lg-8">
                                                 <form class="login login--account w--50" method="post">
                                                     <div class="form--group">
-                                                        <label for="reg-email" class="form--label">Email</label>
-                                                        <input class="form--input" id="reg-email" type="email" autocomplete="email" aria-required="false">
-                                                    </div>
                                                     <div class="form--group">
-                                                        <label for="reg-current-password" class="form--label">Current Password</label>
-                                                        <input class="form--input eye--password" id="reg-current-password" type="password" autocomplete="current-password" aria-required="false">
-                                                        <span toggle="#reg-current-password" data-toggle="current-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
-                                                    </div>
-                                                    <div class="form--group">
-                                                        <label for="reg-new-password" class="form--label">New Password</label>
-                                                        <input class="form--input eye--password" id="reg-new-password" type="password" autocomplete="new-password" aria-required="false">
-                                                        <span toggle="#reg-new-password" data-toggle="new-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
+                                                        <label for="reg-confirm-password" class="form--label">Confirm Your Password</label>
+                                                        <input class="form--input eye--password" id="reg-confirm-password" type="password" autocomplete="current-password" aria-required="true" required>
+                                                        <span toggle="#reg-confirm-password" data-toggle="confirm-password" class="zmdi zmdi-eye field--icon toggle--password"></span>
                                                     </div>
                                                 </form>
-                                                <div class="update--merchant__details-btn">
-                                                    <a href="javascript:void(0)" class="commit--changes__login" data-toggle="change--effected" toggle="#change--effected__login">Update</a>
+                                                <div class="update--merchant__details-btn delete__account">
+                                                    <a href="javascript:void(0)" class="commit--changes__delete" data-toggle="change--effected" toggle="#change--effected__delete">Delete</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -445,7 +443,7 @@
                             <div class="ft__widget">
                                 <h2 class="ft__title">Quick Links</h2>
                                 <ul class="">
-                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="javascript:void(0)">Account</a></li>
                                 </ul>
                             </div>

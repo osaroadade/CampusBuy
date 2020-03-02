@@ -81,7 +81,7 @@
             <div class="offsetmenu home-five">
                 <div class="offsetmenu__inner sidebar__menu--inner">
                     <div class="offsetmenu__close__btn">
-                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                        <a href="javascript:void(0)"><i class="zmdi zmdi-close"></i></a>
                     </div>
                     <div class="off__contact">
                         <div class="logo hd__title" style="font-family: Dosis;">
@@ -96,7 +96,6 @@
                             <li><a href="about.html">About Us</a></li>
                             <li class="active"><a href="contact.html">Contact Us</a></li>
                             <li><a href="post-ad.html">Post Ad</a></li>
-                            <li><a href="view-ad.html">View Ads</a></li>
                             <li><a href="search.html">Search</a></li>
                         </ul>
                     </nav>
@@ -174,30 +173,30 @@
                                     <div class="contact-title">
                                         <h2 class="contact__title">We Would Love To Hear From You</h2>
                                     </div>
-                                    <form id="contact-form" action="#" method="post">
-                                        <div class="single-contact-form">
-                                            <div class="contact-box name">
-                                                <input type="text" name="name" placeholder="Your Name*" aria-required="true" autocomplete="name" required>
-                                                <input type="email" name="email" placeholder="Mail*" aria-required="true" autocomplete="email" required>
-                                            </div>
+                                    <form class="row login login--account" id="contact-form" method="post" action="#">
+                                        <div class="col-sm-12 col-md-6 col-lg-6 form--group">
+                                            <label for="full-name" class="form--label">Name</label>
+                                            <input class="form--input" id="full-name" type="text" autocomplete="name" aria-required="true" required>
                                         </div>
-                                        <div class="single-contact-form">
-                                            <div class="contact-box subject">
-                                                <input type="text" name="subject" placeholder="Subject*" aria-required="true" required>
-                                            </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-6 form--group">
+                                            <label for="email" class="form--label">Email</label>
+                                            <input class="form--input" type="email" id="email" autocomplete="email" aria-required="true" required>
                                         </div>
-                                        <div class="single-contact-form">
-                                            <div class="contact-box message">
-                                                <textarea name="message" placeholder="Message*" aria-required="true" required></textarea>
-                                            </div>
+                                        <div class="col-12 form--group">
+                                            <label for="subject" class="form--label">Subject</label>
+                                            <input class="form--input" id="text" type="subject" aria-required="true" required>
                                         </div>
-                                        <div class="contact-btn">
+                                        <div class="col-12 form--group">
+                                            <label for="message" class="form--label">Message</label>
+                                            <textarea class="form--input" id="message" cols="30" rows="3" aria-required="true" required></textarea>
+                                        </div>
+                                        <div class="col-12 contact-btn">
                                             <button type="submit" class="fv-btn">SEND</button>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="form-output">
-                                    <p class="form-messege"></p>
+                                    <p class="form-message"></p>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +236,7 @@
                             <div class="ft__widget">
                                 <h2 class="ft__title">Quick Links</h2>
                                 <ul class="">
-                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="javascript:void(0)">Account</a></li>
                                 </ul>
                             </div>

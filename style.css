@@ -287,10 +287,8 @@ button {
     border-style: none none solid;
     border-width: 0 0 1px;
     color: #686868;
-    font-size: 1;
+    font-size: 14px;
     height: 40px;
-    /* line-height: 40px; */
-    /* padding: 0 15px; */
     width: 100%;
     background: transparent;
 }
@@ -305,9 +303,9 @@ button {
 }
 .tabs__checkbox label {
     bottom: 2px;
-    color: #999;
-    font-size: 15px;
-    padding-left: 9px;
+    color: #686868;
+    font-size: 14px;
+    padding-left: 5px;
     position: relative;
     text-transform: capitalize;
     font-weight: normal;
@@ -317,7 +315,6 @@ button {
     margin-bottom: 20px;
 }
 .tabs__checkbox span {
-  color: #686868;
   text-transform: capitalize;
   padding-left: 5px;
 }
@@ -2514,7 +2511,7 @@ select.select-color {
     display: flex;
 }
 .pro__dtl__btn li + li {
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
 .pro__dtl__btn li a {
     border: 1px solid #d5d5d5;
