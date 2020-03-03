@@ -95,6 +95,11 @@ label{
   .notification--reminder{
     padding: 30px;
   }
+  .notification--reminder h3 a{
+    display: inline-block!important;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
 }
 .product__details h2{
   font-size: 20px;
