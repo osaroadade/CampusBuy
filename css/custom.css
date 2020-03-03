@@ -44,63 +44,6 @@ label{
   font-weight: 600;
   text-transform: capitalize;
 }
-@media (max-width: 767px){
-  .single-checkout-box input[type="file"] {
-    width: 100%;
-  }
-  .slider__content h1{
-    padding-top: 50px;
-    font-size: 30px;
-    font-weight: 500;
-  }
-  .slider__content h2{
-    font-size: 24px;
-  }
-  .bradcaump__inner{
-    padding-top: 100px;
-  }
-  .ht__bradcaump__wrap{
-    height: 250px;
-  }
-  .contact__details p{
-    font-size: 14px;
-  }
-  .product__list .col-sm-6{
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  section.ptb--210{
-    padding: 0 0 80px 0;
-  }
-  .search--status img{
-    width: 100%!important;
-  }
-  .search--bar{
-    width: 100%!important;
-  }
-  form.w--50{
-    width: 100%!important;
-  }
-  .mb__30{
-    margin-bottom: 30px;
-  }
-  .pro__dtl__btn li.buy__now__btn a{
-    width: 145px;
-  }
-  .notification--reminder h3{
-    font-size: 14px;
-  }
-  .notification--reminder{
-    padding: 30px;
-  }
-  .notification--reminder h3 a{
-    display: inline-block!important;
-    margin-top: 15px;
-    margin-left: 0px;
-  }
-}
 .product__details h2{
   font-size: 20px;
 }
@@ -446,4 +389,62 @@ form.w--50{
 .myaccordion .btn-link:hover,
 .myaccordion .btn-link:focus {
   text-decoration: none;
+}
+
+@media (max-width: 767px){
+  .single-checkout-box input[type="file"] {
+    width: 100%;
+  }
+  .slider__content h1{
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .slider__content h2{
+    font-size: 24px;
+  }
+  .bradcaump__inner{
+    padding-top: 100px;
+  }
+  .ht__bradcaump__wrap{
+    height: 250px;
+  }
+  .contact__details p{
+    font-size: 14px;
+  }
+  .product__list .col-sm-6{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  section.ptb--210{
+    padding: 0 0 80px 0;
+  }
+  .search--status img{
+    width: 100%;
+  }
+  .search--bar{
+    width: 100%;
+  }
+  form.w--50{
+    width: 100%;
+  }
+  .mb__30{
+    margin-bottom: 30px;
+  }
+  .pro__dtl__btn li.buy__now__btn a{
+    width: 145px;
+  }
+  .notification--reminder h3{
+    font-size: 14px;
+  }
+  .notification--reminder{
+    padding: 25px;
+  }
+  .notification--reminder h3 a{
+    display: block;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
 }
