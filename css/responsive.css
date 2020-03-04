@@ -577,7 +577,7 @@
 /* small mobile :320px. */
 @media (max-width: 767px) {
   
-.container {width:300px}
+.container {width:350px;}
 
 /*------------------
  Padding Top
@@ -932,7 +932,7 @@ blockquote::before {
 .single-checkout-box select {
   margin-bottom: 40px;
   margin-right: 0px;
-  width: 100%;
+  width: 90%;
 }
 .contact__address__inner {
   display: block;

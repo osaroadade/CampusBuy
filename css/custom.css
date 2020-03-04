@@ -5,7 +5,6 @@ img{
   -o-user-drag: none;
 }
 html{
-  scroll-behavior: smooth;
 }
 label{
   margin-bottom: 0 !important;
@@ -33,7 +32,7 @@ label{
   height: 40px;
   line-height: 40px;
   padding-left: 20px;
-  width: 90%;
+  width: 190%;
 }
 .single-checkout-box input[type="file"] {
   line-height: 30px;
@@ -63,8 +62,8 @@ label{
   padding-left: 15px;
 }
 .modal-body h3{
-  margin: 0 25px;
   padding-top: 15px;
+  margin-bottom: 10px;
 }
 .pro__detl__title p{
   padding-top: 8px;
@@ -447,4 +446,79 @@ form.w--50{
     margin-top: 15px;
     margin-left: 0px;
   }
+  .view--add{
+    width: 420px!important;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .view--add {
+    width: 645px;
+  }
+}
+.faq {
+  background-color: #e4e4e4;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.on, .faq:hover {
+  background-color: #e4e4e4;
+}
+
+.faq:after {
+  content: '\2212';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.on:after {
+  content: '\002B';
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faqelement {
+  margin: auto;
+  float: initial;
+}
+
+.btn-primary {
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
+}
+
+.btn-primary:hover {
+  color: rgb(99,133,205);
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
+}
+
+.faq{
+  background-color: blanchedalmond;
 }

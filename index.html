@@ -35,7 +35,7 @@
     <!--Start Select Location Notification-->
     <div class="notification--wrapper hide" id="openToast">
         <div class="notification--reminder ptb--20 text-center col-12">
-            <h3>To ensure a good experience, please select a CAMPUS near you. <a class="exit--toast" href="javascript:void(0);">Got it.</a></h3>
+            <h3>To ensure a good experience, please select a CAMPUS near you. <a class="exit--toast" href="#chooseLocation" data-toggle="modal" data-target="#chooseLocation">Got it.</a></h3>
         </div>
     </div>
     <!--End Select Location Notification-->
@@ -117,14 +117,15 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <h3>To improve your experience on our site, please select your location.</h3>
-                            <div class="single-checkout-box select-option mt--20">
-                                <select>
-                                    <option>Select Your Location</option>
-                                    <option>UNIBEN</option>
-                                    <option>UNILAG</option>
-                                    <option>UNICAL</option>
-                                    <option>UNIPORT</option>
-                                    <option>UNIABUJA</option>
+                            <div class="product--select">
+                                <select class="product--select__cat">
+                                    <option value="0">Select Product Category</option>
+                                    <option value="1">Gadgets</option>
+                                    <option value="2">Accommodation</option>
+                                    <option value="3">Events & Shows</option>
+                                    <option value="4">Clothing & Accessories</option>
+                                    <option value="5">Services</option>
+                                    <option value="6">Others</option>
                                 </select>
                             </div>
                         </div>
@@ -203,16 +204,16 @@
 
             <!-- Start Banner Area -->
             <!-- Start Our Product Area -->
-            <section class="htc__product__area ptb--130 bg__white" id="ads view-ad">
-                <div class="container">
+            <section class="htc__product__area ptb--130 bg__white" id="view-ad">
+                <div class="pro__detl__title text-center">
+                    <h2>Product Categories</h2>
+                    <p>Please select a category to start shopping.</p>
+                </div>
+                <div class="container view--add">
                     <div class="htc__product__container">
-                        <div class="pro__detl__title">
-                            <h2>Product Categories</h2>
-                            <p class="text-center">Please select a category to start shopping.</p>
-                        </div>
                         <div class="row product__list">
                             <!-- Start Single Product -->
-                            <div class="col-md-4 single__pro col-lg-4 col-sm-12">
+                            <div class="col-md-4 single__pro col-lg-4 col-md-6 col-sm-6">
                                 <div class="product foo">
                                     <div class="product__inner">
                                         <div class="pro__thumb">
@@ -231,7 +232,7 @@
                             </div>
                             <!-- End Single Product -->
                             <!-- Start Single Product -->
-                            <div class="col-md-4 single__pro col-lg-4 col-sm-12">
+                            <div class="col-md-4 single__pro col-lg-4 col-md-6 col-sm-6">
                                 <div class="product foo">
                                     <div class="product__inner">
                                         <div class="pro__thumb">
@@ -250,7 +251,7 @@
                             </div>
                             <!-- End Single Product -->
                             <!-- Start Single Product -->
-                            <div class="col-md-4 single__pro col-lg-4 col-sm-12">
+                            <div class="col-md-4 single__pro col-lg-4 col-md-6 col-sm-6">
                                 <div class="product foo">
                                     <div class="product__inner">
                                         <div class="pro__thumb">
@@ -269,7 +270,7 @@
                             </div>
                             <!-- End Single Product -->
                             <!-- Start Single Product -->
-                            <div class="col-md-4 single__pro col-lg-4 col-sm-12">
+                            <div class="col-md-4 single__pro col-lg-4 col-md-6 col-sm-6">
                                 <div class="product foo">
                                     <div class="product__inner">
                                         <div class="pro__thumb">
@@ -288,7 +289,7 @@
                             </div>
                             <!-- End Single Product -->
                             <!-- Start Single Product -->
-                            <div class="col-md-4 single__pro col-lg-4 cat--1 col-sm-12">
+                            <div class="col-md-4 single__pro col-lg-4 col-md-6 cat--1 col-sm-6">
                                 <div class="product foo">
                                     <div class="product__inner">
                                         <div class="pro__thumb">
@@ -307,7 +308,7 @@
                             </div>
                             <!-- End Single Product -->
                             <!-- Start Single Product -->
-                            <div class="col-md-4 single__pro col-lg-4 col-sm-12">
+                            <div class="col-md-4 single__pro col-lg-4 col-md-6 col-sm-6">
                                 <div class="product foo">
                                     <div class="product__inner">
                                         <div class="pro__thumb">
@@ -332,7 +333,7 @@
             <!-- End Our Product Area -->
 
             <!--Start FAQ Section-->
-            <section class="ptb--130">
+            <section id="faq" class="faq ptb--130">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -344,48 +345,14 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Collapsible Group Item #1
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
+                            <div class="faqelement"><button class="btn btn-primary faq on" type="button" style="box-shadow: none;">Questions </button>
+                                <div class="panel">
+                                    <p>Answer</p>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Collapsible Group Item #2
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Collapsible Group Item #3
-                                             </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
+                            </div><br />
+                            <div class="faqelement"><button class="btn btn-primary faq on" type="button" style="box-shadow: none;">Questions </button>
+                                <div class="panel">
+                                    <p>Answer</p>
                                 </div>
                             </div>
                             <!-- Start Load More BTn-->
@@ -418,7 +385,7 @@
                         </div>
                         <!-- End Single Footer Widget -->
                         <!-- Start Single Footer Widget -->
-                        <div class="col-md-6 col-lg-4 col-sm-12 smt-30 xmt-30">
+                        <div class="col-md-6 col-lg-4 col-md-6 col-sm-12 smt-30 xmt-30">
                             <div class="ft__widget contact__us">
                                 <h2 class="ft__title">Contact Us</h2>
                                 <div class="footer__inner">
