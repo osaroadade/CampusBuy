@@ -452,7 +452,7 @@ form.w--50{
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .view--add {
-    width: 600px;
+    width: 580px;
   }
 }
 .faq {
