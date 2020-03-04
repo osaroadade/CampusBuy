@@ -508,3 +508,33 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//Update Product
+$(function () {
+  $('.show').click(function() {
+    $('.toast').addClass('on');
+    setTimeout(function () { 
+      $('.toast').removeClass('on')
+    }, 1500);
+  });
+});
+
+//Logout
+$(function () {
+  $('.show--logout').click(function() {
+    $('.login-out').addClass('on');
+    setTimeout(function (){
+      $(location).attr('href', '../index.html')
+    }, 2000)
+  });
+});
+
+//Delete Product
+$(function () {
+  $('.delete__pro').click(function() {
+    $('.delete--product').addClass('on');
+    setTimeout(function (){
+      $(location).attr('href', '../merchant.html')
+    }, 2000)
+  });
+});

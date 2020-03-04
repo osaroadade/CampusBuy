@@ -208,6 +208,10 @@ label{
   border: 1px solid #d5d5d5;
   color: #4b4b4b;
 }
+.update--merchant__details-btn .merchant-_business{
+  width: 180px;
+  margin-left: 10px;
+}
 form.w--50{
   width: 50%;
 }
@@ -455,70 +459,59 @@ form.w--50{
     width: 550px;
   }
 }
-.faq {
-  background-color: #e4e4e4;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+.toast {
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  padding: 1.25em;
+  position: fixed;
+  right: -365px;
+  bottom: 10em;
+  transition: 0.15s ease-in-out;
+  width: 250px;
+  z-index: 9999999999999999999999;
 }
 
-.on, .faq:hover {
-  background-color: #e4e4e4;
+.toast.on {
+  transform: translateX(-365px);
 }
 
-.faq:after {
-  content: '\2212';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.on:after {
-  content: '\002B';
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.faqelement {
-  margin: auto;
-  float: initial;
-}
-
-.btn-primary {
-  background-color: #e4e4e4;
-  border-color: #e4e4e4;
-}
-
-.btn-primary:hover {
-  color: rgb(99,133,205);
-  background-color: #e4e4e4;
-  border-color: #e4e4e4;
-}
-
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+.jam {
+  background-color: #1a22b8;
   color: #fff;
-  background-color: #e4e4e4;
-  border-color: #e4e4e4;
 }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #e4e4e4;
-  border-color: #e4e4e4;
+.login-out{
+  background-color: #1a22b8;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  padding: 1.25em;
+  position: fixed;
+  right: -365px;
+  bottom: 10em;
+  transition: 0.15s ease-in-out;
+  width: 300px;
+  z-index: 9999999999999999999999;
 }
 
-.faq--section{
-  background-color: blanchedalmond;
+.login-out.on {
+  transform: translateX(-365px);
+}
+.delete--product{
+  background-color: #1a22b8;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  padding: 1.25em;
+  position: fixed;
+  right: -365px;
+  bottom: 10em;
+  transition: 0.15s ease-in-out;
+  width: 300px;
+  z-index: 9999999999999999999999;
+}
+
+.delete--product.on {
+  transform: translateX(-365px);
 }

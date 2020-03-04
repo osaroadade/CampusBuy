@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CampusBuy :: FAQ</title>
+    <title>CampusBuy :: Edit Ad</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +35,7 @@
     <![endif]-->
 
     <!-- Body main wrapper start -->
-    <div class="wrapper home-v5">
+    <div class="wrapper  home-v5">
         <!-- Start Header Style -->
         <header id="header" class="htc-header header--5">
             <!-- Start Mainmenu Area -->
@@ -66,7 +66,7 @@
                         <!-- End MAinmenu Ares -->
                         <div class="col-lg-3 col-md-4 col-6">
                             <ul class="menu-extra">
-                                <li><a title="Account" href="login-register.html"><span class="ti-user"></span></a></li>
+                                <li><a href="login-register.html"><span class="ti-user"></span></a></li>
                                 <li class="toggle__menu"><span class="ti-menu"></span></li>
                             </ul>
                         </div>
@@ -98,7 +98,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="post-ad.html">Post Ad</a></li>
+                            <li class="active"><a href="post-ad.html">Post Ad</a></li>
                             <li><a href="search.html">Search</a></li>
                         </ul>
                     </nav>
@@ -106,6 +106,7 @@
             </div>
             <!-- End Offset MEnu -->
             <!-- End Offset Wrapper -->
+            <!-- Start Login Register Area -->
 
             <!-- Start Bradcaump area -->
             <div class="ht__bradcaump__area"
@@ -115,11 +116,11 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="bradcaump__inner text-center">
-                                    <h2 class="bradcaump-title">FAQ</h2>
+                                    <h2 class="bradcaump-title">Edit Your Ad</h2>
                                     <nav class="bradcaump-inner">
-                                        <a class="breadcrumb-item" href="index.html">Home</a>
+                                        <a class="breadcrumb-item" href="merchant.html">Merchant Account</a>
                                         <span class="brd-separetor">/</span>
-                                        <span class="breadcrumb-item active">FAQ</span>
+                                        <span class="breadcrumb-item active">Edit Your Ad</span>
                                     </nav>
                                 </div>
                             </div>
@@ -128,70 +129,55 @@
                 </div>
             </div>
             <!-- End Bradcaump area -->
-
-            <!--Start FAQ Section-->
-            <section class="ptb--130">
+            
+            <section class="ptb--90">
+                <div class="pro__detl__title text-center pb--30">
+                    <h2>Update Product</h2>
+                    <p>You are currently editing Tecno Spark 3.</p>
+                </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="section__title section__title--2 text-center">
-                                <h2 class="title__line">Frequently Asked Questions</h2>
-                                <p>Having trouble using our site? Find an answer that best describes your issue.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Collapsible Group Item #1
-                                            </button>
-                                        </h2>
+                        <div class="col-md-6 ml-auto mr-auto">
+                            <form class="login login--account" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-lg-6 form--group">
+                                        <label for="product-name" class="form--label">Product Name</label>
+                                        <input class="form--input" id="product-name" type="text" aria-required="true" required>
                                     </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
+                                    <div class="col-md-6 col-sm-12 col-lg-6 form--group">
+                                        <label for="price" class="form--label">Price</small></label>
+                                        <input class="form--input" type="text" id="price" aria-required="true" required>
                                     </div>
+                                    <div class="col-md-6 col-sm-12 col-lg-6 form--group">
+                                        <input class="form--input form--input__file" type="file" aria-required="true" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-lg-6 form--group product--select">
+                                        <select class="product--select__cat">
+                                            <option value="0">Select Category</option>
+                                            <option value="1">Gadgets</option>
+                                            <option value="2">Accommodation</option>
+                                            <option value="3">Events & Shows</option>
+                                            <option value="4">Clothing & Accessories</option>
+                                            <option value="5">Services</option>
+                                            <option value="6">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 form--group">
+                                        <label for="product-desc" class="form--label">Product Description</label>
+                                        <textarea class="form--input" id="product-desc" cols="30" rows="3" maxlength="3000" aria-required="true" required></textarea>
+                                    </div>  
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Collapsible Group Item #2
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Collapsible Group Item #3
-                                             </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
+                            </form>
+                            <div class="htc__login__btn">
+                                <a class="show" href="javascript:void(0);">update</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!--End FAQ Section-->
-
+            <div class="toast jam" aria-hidden="true">
+                Product Updated
+            </div>
             <!-- Start Footer Area -->
             <footer class="htc__foooter__area bg__cat--3">
                 <div class="container">
@@ -202,7 +188,8 @@
                                 <h2 class="ft__title">CampusBuy</h2>
                                 <div class="footer__details">
                                     <p>Campus buy is a platform made for students by students. It seeks to improve
-                                        business amongst students with a very simplistic approach; Connecting BUYERS to
+                                        business amongst students with a very simplistic approach; Connecting BUYERS
+                                        to
                                         SELLERS.</p>
                                 </div>
                             </div>
@@ -223,8 +210,7 @@
                             <div class="ft__widget">
                                 <h2 class="ft__title">Quick Links</h2>
                                 <ul class="">
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="javascript:void(0)">Account</a></li>
+                                    <li><a href="login-register.html">Account</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -240,7 +226,7 @@
                                     </div>
                                     <ul class="footer__menu">
                                         <li><a href="index.html">Home</a></li>
-                                        <li><a href="view-ad.html">Product</a></li>
+                                        <li><a href="about.html">About</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
                                     </ul>
                                 </div>
@@ -252,18 +238,20 @@
             </footer>
             <!-- End Footer Area -->
         </div>
-    </div>
-    <!-- Body main wrapper end -->
-    <!-- Placed js at the end of the document so the pages load faster -->
 
-    <!-- jquery latest version -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- Bootstrap Framework js -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All js plugins included in this file. -->
-    <script src="js/plugins.js"></script>
-    <!-- Main js file that contents all jQuery plugins activation. -->
-    <script src="js/main.js"></script>
+        <!-- Body main wrapper end -->
+        <!-- Placed js at the end of the document so the pages load faster -->
+
+        <!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <!-- Bootstrap Framework js -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- All js plugins included in this file. -->
+        <script src="js/plugins.js"></script>
+        <!-- Main js file that contents all jQuery plugins activation. -->
+        <script src="js/main.js"></script>
+
 </body>
+
 </html>

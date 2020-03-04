@@ -2511,7 +2511,7 @@ select.select-color {
     display: flex;
 }
 .pro__dtl__btn li + li {
-    /* margin-left: 16px; */
+    margin-left: 16px;
 }
 .pro__dtl__btn li a {
     border: 1px solid #d5d5d5;
