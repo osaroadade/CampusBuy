@@ -133,46 +133,6 @@
 
 
 
-/*---------------------
-  Newsletter
------------------------*/
-
-.input__box input {
-  border-left: 1px solid #d9d9d9;
-  color: #666666;
-  height: 40px;
-  padding-bottom: 0;
-  padding-left: 20px;
-  padding-top: 0;
-  width: 100%;
-}
-.subscribe__btn input.bst__btn {
-  background-image: url("../../images/icons/send.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 29% auto;
-  position: relative;
-  text-indent: -999px;
-  z-index: 5;
-}
-.subscribe__btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 52px;
-  z-index: 1;
-  transition: 0.5s;
-}
-.subscribe__btn:hover{
-  background: #1a22b8;
-}
-
-
-.input__box {
-  position: relative;
-}
-
-
 
 
 

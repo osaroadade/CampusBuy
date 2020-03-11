@@ -524,7 +524,7 @@ $(function () {
   $('.show--logout').click(function() {
     $('.login-out').addClass('on');
     setTimeout(function (){
-      window.location.replace.assign("/index.html");
+      window.location.replace.assign("./index.html");
     }, 2000)
   });
 });
@@ -534,7 +534,7 @@ $(function () {
   $('.delete__pro').click(function() {
     $('.delete--product').addClass('on');
     setTimeout(function (){
-      window.location.replace.assign("/merchant.html");
+      window.location.replace.assign("./merchant.html");
     }, 2000)
   });
 });
