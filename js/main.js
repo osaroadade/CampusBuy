@@ -474,7 +474,7 @@ $(function () {
 	$('.show--logout').click(function () {
 		$('.login-out').addClass('on');
 		setTimeout(function () {
-			window.location.replace.assign("/index.html");
+			window.location.replace.assign("./index.html");
 		}, 2000)
 	});
 });
@@ -484,7 +484,30 @@ $(function () {
 	$('.delete__pro').click(function () {
 		$('.delete--product').addClass('on');
 		setTimeout(function () {
-			window.location.replace.assign("/merchant.html");
+			window.location.replace.assign("./merchant.html");
 		}, 2000)
 	});
 });
+
+//FAQ Accordion
+;(function($) {
+	var flatAccordion = function() {
+		var speed= {duration: 600};
+		$('.toggle-content').hide();
+		$('.flat-accordion .toggle-title.active').siblings('.toggle-content').show();
+
+		$('.flat-accordion .toggle-title').on('click', function(){
+		if(!$(this).is('.active')) {
+			$(this).closest('.flat-accordion').find('.toggle-title.active').toggleClass('active').next().slideToggle(speed);
+			$(this).toggleClass('active');
+			$(this).next().slideToggle(speed);
+		}else {
+			$(this).toggleClass('active');
+			$(this).next().slideToggle(speed);
+		}
+		});
+	};
+	$(function() {
+		flatAccordion();
+	 });
+})(jQuery);
