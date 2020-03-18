@@ -3305,7 +3305,7 @@ input[type=submit].btn-block {
     transition: opacity .15s linear;
 }
 
-.fade.show {
+.show {
     opacity: 1;
 }
 
